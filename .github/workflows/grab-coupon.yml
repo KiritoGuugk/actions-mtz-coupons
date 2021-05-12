@@ -29,6 +29,8 @@ jobs:
         with:
           node-version: '14'
       - run: yarn install
+      - name: Update
+        run: npm run sync
       - name: Run app
         run: yarn start
         env:
